@@ -2237,6 +2237,7 @@ TypicalColors2.BorderSizePixel = 2
 TypicalColors2.Position = UDim2.new(0.526315808, 0, 0.376425862, 0)
 TypicalColors2.Size = UDim2.new(0, 253, 0, 50)
 TypicalColors2.Font = Enum.Font.GothamBlack
+TypicalColors2.Text = "TypicalColors2"
 TypicalColors2.TextColor3 = Color3.fromRGB(255, 85, 0)
 TypicalColors2.TextSize = 14.000
 TypicalColors2.MouseButton1Down:connect(function()
