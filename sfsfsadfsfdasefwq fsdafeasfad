@@ -5491,6 +5491,8 @@ local function SDYRRZV_fake_script() -- Main.LocalScript
 	        update(input)
 	    end
 	end)
+end
+coroutine.wrap(SDYRRZV_fake_script)()
 
 local function MYLWXFF_fake_script() -- WhiteRainbowModeButton.LocalScript 
 	local script = Instance.new('LocalScript', WhiteRainbowModeButton)
