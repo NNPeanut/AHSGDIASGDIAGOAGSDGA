@@ -146,6 +146,7 @@ Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Main.BorderSizePixel = 2
 Main.Position = UDim2.new(0.309068501, 0, 0.3071253, 0)
 Main.Size = UDim2.new(0, 618, 0, 314)
+Main.Draggable = true
 
 TopBar.Name = "TopBar"
 TopBar.Parent = Main
