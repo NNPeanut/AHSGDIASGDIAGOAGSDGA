@@ -4342,7 +4342,7 @@ BombVestButton.BorderSizePixel = 2
 BombVestButton.Position = UDim2.new(0.0798548013, 0, 0.0160456207, 0)
 BombVestButton.Size = UDim2.new(0, 520, 0, 50)
 BombVestButton.Font = Enum.Font.GothamBlack
-BombVestButton.Text = "Bomb Vest FE"
+BombVestButton.Text = "Bomb Vest"
 BombVestButton.TextColor3 = Color3.fromRGB(255, 85, 0)
 BombVestButton.TextSize = 14.000
 BombVestButton.MouseButton1Down:connect(function()
