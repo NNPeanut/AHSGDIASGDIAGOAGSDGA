@@ -627,7 +627,7 @@ Jailbreak.Text = "Jailbreak"
 Jailbreak.TextColor3 = Color3.fromRGB(255, 85, 0)
 Jailbreak.TextSize = 14.000
 Jailbreak.MouseButton1Down:connect(function()
-getfenv()["\108\111\97\100\115\116\114\105\110\103"](game:HttpGet("\104\116\116\112\115\58\47\47".."pastebin".."\46\99\111\109\47\114\97\119\47\102\88\84\82\53\98\106\90"))() 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Scripts/master/Vynixius%20Jailbreak", true))()
 end)
 
 CBRO.Name = "CBRO"
