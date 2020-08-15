@@ -184,7 +184,7 @@ Slogan.BackgroundTransparency = 1.000
 Slogan.Position = UDim2.new(0.158967972, 0, 0.77940917, 0)
 Slogan.Size = UDim2.new(0, 200, 0, 7)
 Slogan.Font = Enum.Font.GothamBlack
-Slogan.Text = "The Hub Thats Made To Destroy"
+Slogan.Text = "Discord: https://discord.gg/cCU8v6W"
 Slogan.TextColor3 = Color3.fromRGB(255, 85, 0)
 Slogan.TextSize = 11.000
 
