@@ -3785,11 +3785,25 @@ Game3.BorderColor3 = Color3.fromRGB(255, 85, 0)
 Game3.BorderSizePixel = 2
 Game3.Position = UDim2.new(0.0335885286, 0, 0.504752815, 0)
 Game3.Size = UDim2.new(0, 253, 0, 50)
-Game3.Visible = false
+Game3.Visible = true
 Game3.Font = Enum.Font.GothamBlack
-Game3.Text = "Script"
+Game3.Text = "Bloxburg"
 Game3.TextColor3 = Color3.fromRGB(255, 85, 0)
 Game3.TextSize = 14.000
+Game3.MouseButton1Down:connect(function()
+--[[
+                ___.    .__                             .__   __   .__       __    .__                  
+_______   ____  \_ |__  |  |    ____  ___  ___ __  _  __|__|_/  |_ |  |__   |  | __|__|  ____     ____  
+\_  __ \ /  _ \  | __ \ |  |   /    \ \  \/  / \ \/ \/ /|  |\   __\|  |  \  |  |/ /|  | /    \   / ___\ 
+ |  | \/(  <_> ) | \_\ \|  |__(      ) >    <   \     / |  | |  |  |   Y  \ |    < |  ||   |  \ / /_/  >
+ |__|    \____/  |___  /|____/ \____/ /__/\_ \   \/\_/  |__| |__|  |___|  / |__|_ \|__||___|  / \___  / 
+                     \/                     \/                          \/       \/         \/ /_____/ 
+                                       Made by Real King#4934
+                                     https://discord.gg/2TJq7Yz
+]]
+
+loadstring(game:HttpGet('https://pastebin.com/raw/4QsGqbDM'))()
+end)
 
 Game4.Name = "Game4"
 Game4.Parent = ScrollingFrameGames
@@ -3960,7 +3974,7 @@ UpdateFText_2.BackgroundTransparency = 1.000
 UpdateFText_2.Position = UDim2.new(0.0417422876, 0, 0.444866925, 0)
 UpdateFText_2.Size = UDim2.new(0, 128, 0, 21)
 UpdateFText_2.Font = Enum.Font.GothamBlack
-UpdateFText_2.Text = "2 New Games Added"
+UpdateFText_2.Text = "3 New Games Added"
 UpdateFText_2.TextColor3 = Color3.fromRGB(255, 85, 0)
 UpdateFText_2.TextSize = 13.000
 
