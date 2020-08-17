@@ -252,7 +252,7 @@ GamesMenuButton.TextSize = 14.000
 GamesMenuButton.MouseButton1Down:connect(function()
 ScrollingFrameGames.Visible = true
 OtherScriptsFrame.Visible = false
-UpdatesFrame.Visible = false	
+UpdatesFrame.Visible = false
 ThemesFrame.Visible  = false
 end)
 
@@ -272,7 +272,7 @@ OtherScriptsButton.TextWrapped = true
 OtherScriptsButton.MouseButton1Down:connect(function()
 OtherScriptsFrame.Visible = true
 ScrollingFrameGames.Visible = false
-UpdatesFrame.Visible = false	
+UpdatesFrame.Visible = false
 ThemesFrame.Visible  = false
 end)
 
@@ -291,7 +291,7 @@ ThemesMenuButton.TextWrapped = true
 ThemesMenuButton.MouseButton1Down:connect(function()
 ThemesFrame.Visible = true
 ScrollingFrameGames.Visible = false
-OtherScriptsFrame.Visible = false	
+OtherScriptsFrame.Visible = false
 UpdatesFrame.Visible  = false
 end)
 
@@ -311,7 +311,7 @@ Updates.TextWrapped = true
 Updates.MouseButton1Down:connect(function()
 UpdatesFrame.Visible = true
 ScrollingFrameGames.Visible = false
-OtherScriptsFrame.Visible = false	
+OtherScriptsFrame.Visible = false
 ThemesFrame.Visible  = false
 end)
 
@@ -455,8 +455,8 @@ PrevailXButton.TextWrapped = true
 PrevailXButton.MouseButton1Down:connect(function()
 --[[ source: https://v3rmillion.net/showthread.php?tid=1020673
     88""Yb  88""Yb  888888 Yb    dP    db     88  88      Yb  dP
-    88__dP  88__dP  88__    Yb  dP    dPYb    88  88       YbdP 
-    88"""   88"Yb   88""     YbdP    dP__Yb   88  88  .o   dPYb 
+    88__dP  88__dP  88__    Yb  dP    dPYb    88  88       YbdP
+    88"""   88"Yb   88""     YbdP    dP__Yb   88  88  .o   dPYb
     88      88  Yb  888888    YP    dP""""Yb  88  88ood8  dP  Yb  ~02hacks
 ]]
 loadstring(game:HttpGet("https://pastebin.com/raw/x24KgNwj", true))()
@@ -518,29 +518,29 @@ end)
 
 -- Scripts:
 
-local function SDYRRZV_fake_script() -- Main.LocalScript 
+local function SDYRRZV_fake_script() -- Main.LocalScript
 	local script = Instance.new('LocalScript', Main)
 
 	local UserInputService = game:GetService("UserInputService")
-	 
+
 	local Main = script.Parent
-	 
+
 	local dragging
 	local dragInput
 	local dragStart
 	local startPos
-	 
+
 	local function update(input)
 	    local delta = input.Position - dragStart
 	    Main.Position = Main:TweenPosition(UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y), 'Out', 'Linear', 0, true); -- drag speed
 	end
-	 
+
 	Main.InputBegan:Connect(function(input)
 	    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
 	        dragging = true
 	        dragStart = input.Position
 	        startPos = Main.Position
-	       
+
 	        input.Changed:Connect(function()
 	            if input.UserInputState == Enum.UserInputState.End then
 	                dragging = false
@@ -548,13 +548,13 @@ local function SDYRRZV_fake_script() -- Main.LocalScript
 	        end)
 	    end
 	end)
-	 
+
 	Main.InputChanged:Connect(function(input)
 	    if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
 	        dragInput = input
 	    end
 	end)
-	 
+
 	UserInputService.InputChanged:Connect(function(input)
 	    if input == dragInput and dragging then
 	        update(input)
@@ -563,53 +563,53 @@ local function SDYRRZV_fake_script() -- Main.LocalScript
 end
 coroutine.wrap(SDYRRZV_fake_script)()
 
-local function JIYMGZN_fake_script() -- PrevailXButton.LocalScript 
+local function JIYMGZN_fake_script() -- PrevailXButton.LocalScript
 	local script = Instance.new('LocalScript', PrevailXButton)
 
-	while true do 
+	while true do
 	i = 0
-	for n=1,0,-0.05 do 
+	for n=1,0,-0.05 do
 	i = i + 0.05
 	script.Parent.TextColor3 = Color3.new(i, 0, n)
-	wait() 
+	wait()
 	end
 	i = 0
-	for n=1,0,-0.05 do 
+	for n=1,0,-0.05 do
 	i = i + 0.05
 	script.Parent.TextColor3= Color3.new(n, i, 0)
 	wait()
 	end
 	i = 0
-	for n=1,0,-0.05 do 
+	for n=1,0,-0.05 do
 	i = i + 0.05
 	script.Parent.TextColor3 = Color3.new(0, n, i)
-	wait() 
-	end 
+	wait()
+	end
 	end
 end
 coroutine.wrap(JIYMGZN_fake_script)()
-local function RXPLEHD_fake_script() -- AuraVButton.LocalScript 
+local function RXPLEHD_fake_script() -- AuraVButton.LocalScript
 	local script = Instance.new('LocalScript', AuraVButton)
 
-	while true do 
+	while true do
 	i = 0
-	for n=1,0,-0.05 do 
+	for n=1,0,-0.05 do
 	i = i + 0.05
 	script.Parent.TextColor3 = Color3.new(i, 0, n)
-	wait() 
+	wait()
 	end
 	i = 0
-	for n=1,0,-0.05 do 
+	for n=1,0,-0.05 do
 	i = i + 0.05
 	script.Parent.TextColor3= Color3.new(n, i, 0)
 	wait()
 	end
 	i = 0
-	for n=1,0,-0.05 do 
+	for n=1,0,-0.05 do
 	i = i + 0.05
 	script.Parent.TextColor3 = Color3.new(0, n, i)
-	wait() 
-	end 
+	wait()
+	end
 	end
 end
 coroutine.wrap(RXPLEHD_fake_script)()
@@ -1416,13 +1416,13 @@ function addcategory(info)
 	local content = Instance.new("ScrollingFrame")
 	local sizefixer = Instance.new("Frame")
 	local UIListLayout = Instance.new("UIListLayout")
-	
+
 	category.Name = "category"
 	category.BackgroundColor3 = Color3.new(0.176471, 0.188235, 0.231373)
 	category.BorderColor3 = Color3.new(0.211765, 0.231373, 0.247059)
 	category.Size = UDim2.new(0, 225, 0, info['lenght'])
-	
-	local postoday; 
+
+	local postoday;
 	if #info["parent"]:GetChildren() == 0 then
 		postoday = UDim2.new(0,10,0,10)
 	else
@@ -1438,7 +1438,7 @@ function addcategory(info)
 	end
 	category.Position = postoday
 	category.Parent = info['parent']
-	
+
 	scrolldesign.Name = "scrolldesign"
 	scrolldesign.Parent = category
 	scrolldesign.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -1450,7 +1450,7 @@ function addcategory(info)
 	scrolldesign.ImageColor3 = Color3.new(0.121569, 0.129412, 0.156863)
 	scrolldesign.ScaleType = Enum.ScaleType.Slice
 	scrolldesign.SliceCenter = Rect.new(12, 12, 13, 13)
-	
+
 	top.Name = "top"
 	top.Parent = category
 	top.BackgroundColor3 = Color3.new(1, 0.784314, 0.403922)
@@ -1458,7 +1458,7 @@ function addcategory(info)
 	top.BorderSizePixel = 0
 	top.Size = UDim2.new(1, 0, 0, 1)
 	top.ZIndex = 10000
-	
+
 	title.Name = "title"
 	title.Parent = top
 	title.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -1471,7 +1471,7 @@ function addcategory(info)
 	title.TextColor3 = Color3.new(1, 1, 1)
 	title.TextSize = 11
 	title.TextStrokeTransparency = 0.94999998807907
-	
+
 	content.Name = "content"
 	content.Parent = category
 	content.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -1483,29 +1483,29 @@ function addcategory(info)
 	content.ScrollBarThickness = 5
 	content.TopImage = ""
 	content.CanvasSize = UDim2.new(0, 0, 5, 0)
-	
+
 	sizefixer.Name = "sizefixer"
 	sizefixer.Parent = content
 	sizefixer.BackgroundColor3 = Color3.new(1, 1, 1)
 	sizefixer.BackgroundTransparency = 1
 	sizefixer.Size = UDim2.new(1, 0, 0, 10)
-	
+
 	UIListLayout.Parent = content
 	UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
-	
+
 	return content
 end
 function addbutton(info,callback)
 	callback = callback or function() end
 	local button = Instance.new("Frame")
 	local real = Instance.new("TextButton")
-	
+
 	button.Name = "button"
 	button.Parent = info['parent']
 	button.BackgroundColor3 = Color3.new(1, 1, 1)
 	button.BackgroundTransparency = 1
 	button.Size = UDim2.new(0, 6, 0, 23)
-	
+
 	real.Name = "real"
 	real.Parent = button
 	real.BackgroundColor3 = Color3.new(0.121569, 0.12549, 0.156863)
@@ -1515,28 +1515,28 @@ function addbutton(info,callback)
 	real.Font = Enum.Font.GothamSemibold
 	real.Text = info['text']
 	real.TextSize = 11
-	
+
 	real.TextColor3 = Color3.fromRGB(250, 250, 250)
 	real.MouseButton1Click:connect(callback)
-	
+
 	real.MouseEnter:connect(function() real.TextColor3 = Color3.fromRGB(255, 200, 103) end)
 	real.MouseLeave:connect(function() real.TextColor3 = Color3.new(0.980392, 0.980392, 0.980392) end)
 end
 
 function addtoggle(info,callback)
 	callback = callback or function() end
-	
+
 	local toggle = Instance.new("Frame")
 	local title = Instance.new("TextLabel")
 	local border = Instance.new("ImageLabel")
 	local button = Instance.new("ImageButton")
-	
+
 	toggle.Name = "toggle"
 	toggle.Parent = info['parent']
 	toggle.BackgroundColor3 = Color3.new(1, 1, 1)
 	toggle.BackgroundTransparency = 1
 	toggle.Size = UDim2.new(0, 6, 0, 21)
-	
+
 	title.Name = "title"
 	title.Parent = toggle
 	title.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -1548,7 +1548,7 @@ function addtoggle(info,callback)
 	title.TextColor3 = Color3.new(1, 1, 1)
 	title.TextSize = 11
 	title.TextXAlignment = Enum.TextXAlignment.Left
-	
+
 	border.Name = "border"
 	border.Parent = toggle
 	border.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -1557,10 +1557,10 @@ function addtoggle(info,callback)
 	border.Size = UDim2.new(0, 14, 0, 14)
 	border.Image = "rbxassetid://2260429633"
 	border.ImageColor3 = Color3.new(0.211765, 0.231373, 0.247059)
-	
+
 	border.MouseEnter:connect(function() border.ImageColor3 = Color3.fromRGB(255, 200, 103) end)
 	border.MouseLeave:connect(function() border.ImageColor3 = Color3.new(0.211765, 0.231373, 0.247059) end)
-	
+
 	button.Name = "button"
 	button.Parent = border
 	button.BackgroundColor3 = Color3.new(0.121569, 0.12549, 0.156863)
@@ -1578,12 +1578,12 @@ function addtoggle(info,callback)
 	local fap = Instance.new("BoolValue",configfolder)
 	fap.Name = info['valuename']
 	fap.Value = info['value'] or false
-	
+
 	fap.Changed:connect(function(c)
 		button.ImageColor3 = (fap.Value and Color3.fromRGB(255, 200, 103) or Color3.fromRGB(31, 32, 40))
 		callback(fap.Value)
 	end)
-	
+
 	button.MouseButton1Click:connect(function()
 		fap.Value = (not fap.Value)
 	end)
@@ -1597,13 +1597,13 @@ function adddropdown(info,callback)
 	local title = Instance.new("TextLabel")
 	local drop = Instance.new("Frame")
 	local listthing = Instance.new("UIListLayout")
-	
-	
-	
+
+
+
 	local fap = Instance.new("StringValue",configfolder)
 	fap.Name = info['valuename']
 	fap.Value = tostring(info['list'][1])
-	
+
 	dropdown.Name = "dropdown"
 	dropdown.Parent = info['parent']
 	dropdown.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -1611,24 +1611,24 @@ function adddropdown(info,callback)
 	dropdown.Position = UDim2.new(0, 0, 0.589999974, 0)
 	dropdown.Size = UDim2.new(0, 27, 0, 24)
 	dropdown.ZIndex = 100000000000000
-	
+
 	body.Name = "body"
 	body.Parent = dropdown
 	body.BackgroundColor3 = Color3.new(0.121569, 0.12549, 0.156863)
 	body.BorderColor3 = Color3.new(0.211765, 0.223529, 0.25098)
 	body.Position = UDim2.new(1, 0, 0, 0)
 	body.Size = UDim2.new(0, 130, 0, 18)
-	
+
 	click.Parent = body
 	click.BackgroundColor3 = Color3.new(1, 1, 1)
 	click.BackgroundTransparency = 1
 	click.Position = UDim2.new(1, -15, 0, 5)
 	click.Size = UDim2.new(0, 9, 0, 9)
 	click.Image = "http://www.roblox.com/asset/?id=1248849582"
-	
+
 	click.MouseEnter:connect(function() click.ImageColor3 = Color3.fromRGB(255, 200, 103) end)
 	click.MouseLeave:connect(function() click.ImageColor3 = Color3.fromRGB(255,255,255) end)
-	
+
 	title.Name = "title"
 	title.Parent = body
 	title.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -1641,7 +1641,7 @@ function adddropdown(info,callback)
 	title.TextColor3 = Color3.new(1, 1, 1)
 	title.TextSize = 11
 	title.TextXAlignment = Enum.TextXAlignment.Left
-	
+
 	drop.Name = "drop"
 	drop.Parent = body
 	drop.BackgroundColor3 = Color3.new(0.121569, 0.12549, 0.156863)
@@ -1652,14 +1652,14 @@ function adddropdown(info,callback)
 	drop.Size = UDim2.new(0, 130, 0, #info['list']*18)
 	drop.Visible = false
 	drop.ZIndex = 100000000
-	
+
 	listthing.Name = "listthing"
 	listthing.Parent = drop
 	listthing.SortOrder = Enum.SortOrder.LayoutOrder
-	
+
 	for _,name in pairs(info['list']) do
 		local dropbutton = Instance.new("TextButton")
-		
+
 		dropbutton.Name = "dropbutton"
 		dropbutton.Parent = drop
 		dropbutton.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -1669,14 +1669,14 @@ function adddropdown(info,callback)
 		dropbutton.Text = tostring(name)
 		dropbutton.TextColor3 = Color3.new(0.980392, 0.980392, 0.980392)
 		dropbutton.TextSize = 11
-		
+
 		dropbutton.MouseEnter:connect(function() dropbutton.TextColor3 = Color3.fromRGB(255, 200, 103) end)
 		dropbutton.MouseLeave:connect(function() dropbutton.TextColor3 = Color3.new(0.980392, 0.980392, 0.980392) end)
 		dropbutton.MouseButton1Click:Connect(function()
 			fap.Value = tostring(name)
 		end)
 	end
-	
+
 	fap.Changed:connect(function()
 		drop.Visible = false
 		click.Rotation = 0
@@ -1684,7 +1684,7 @@ function adddropdown(info,callback)
 		body.BorderColor3 = Color3.fromRGB(54, 57, 64)
 		callback(fap.Value)
 	end)
-	
+
 	click.MouseButton1Click:connect(function()
 		if click.Rotation == 0 then click.Rotation = -180;body.BorderColor3 = Color3.fromRGB(255, 200, 103); drop.Visible = true else click.Rotation = 0; drop.Visible = false;body.BorderColor3 = Color3.fromRGB(54, 57, 64) end
 	end)
@@ -1718,23 +1718,23 @@ function addscroll(info,callback)
 	local title = Instance.new("TextLabel")
 	local max = Instance.new("ImageLabel")
 	local scroll = Instance.new("ImageLabel")
-	
+
 	local fap = Instance.new("NumberValue",configfolder)
 	fap.Name = info['valuename']
 	fap.Value = info['value'] or 0
-	
+
 	fap.Changed:connect(function(c)
 		callback(fap.Value)
 		scroll:TweenSize(UDim2.new(fap.value/info['maxed'], 5, 0, 4), 'Out', 'Quad', 0.2, true);
 	end)
-	
+
 	scrolling.Name = "scrolling"
 	scrolling.Parent = info['parent']
 	scrolling.BackgroundColor3 = Color3.new(1, 1, 1)
 	scrolling.BackgroundTransparency = 1
 	scrolling.Position = UDim2.new(0, 0, 0.300000012, 0)
 	scrolling.Size = UDim2.new(0, 18, 0, 25)
-	
+
 	title.Name = "title"
 	title.Parent = scrolling
 	title.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -1747,7 +1747,7 @@ function addscroll(info,callback)
 	title.TextSize = 11
 	title.TextXAlignment = Enum.TextXAlignment.Left
 	title.TextYAlignment = Enum.TextYAlignment.Top
-	
+
 	max.Name = "max"
 	max.Parent = scrolling
 	max.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -1758,7 +1758,7 @@ function addscroll(info,callback)
 	max.ImageColor3 = Color3.new(0.141176, 0.14902, 0.188235)
 	max.ScaleType = Enum.ScaleType.Slice
 	max.SliceCenter = Rect.new(12, 12, 13, 13)
-	
+
 	scroll.Name = "scroll"
 	scroll.Parent = max
 	scroll.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -1768,7 +1768,7 @@ function addscroll(info,callback)
 	scroll.ImageColor3 = Color3.new(1, 0.784314, 0.403922)
 	scroll.ScaleType = Enum.ScaleType.Slice
 	scroll.SliceCenter = Rect.new(12, 12, 13, 13)
-	
+
 	scroll:TweenSize(UDim2.new((info['value']/info['maxed'])/info['maxed'], 5, 0, 4), 'Out', 'Quad', 0.2, true);
 
 	local mouse = game:GetService("Players").LocalPlayer:GetMouse();
@@ -1831,15 +1831,15 @@ addtoggle({parent=CharacterRage,title='Fire Damage Bypass',valuename='antifire'}
 
 addtoggle({parent=CharacterRage,title='Fall Damage Bypass',valuename='nofalldamage'}, function(bruh) end)
 
-for i,v in pairs(game:GetService("ReplicatedStorage"):GetDescendants()) do 
-	if v.Name == "WalkSpeed" then 
+for i,v in pairs(game:GetService("ReplicatedStorage"):GetDescendants()) do
+	if v.Name == "WalkSpeed" then
 		Instance.new('Sky',v).Name = v.Value
 	end
 end
 
-addtoggle({parent=CharacterRage,title='Bunny Hop',valuename='bhop'}, function(bruh) 
-	for i,v in pairs(game:GetService("ReplicatedStorage"):GetDescendants()) do 
-		if v.Name == "WalkSpeed" then 
+addtoggle({parent=CharacterRage,title='Bunny Hop',valuename='bhop'}, function(bruh)
+	for i,v in pairs(game:GetService("ReplicatedStorage"):GetDescendants()) do
+		if v.Name == "WalkSpeed" then
 			if bruh == true then
 				v.Value = 6969
 			else
@@ -1849,15 +1849,15 @@ addtoggle({parent=CharacterRage,title='Bunny Hop',valuename='bhop'}, function(br
 	end
 end)
 
-addtoggle({parent=CharacterRage,title='Auto Hop',valuename='autohop'}, function(bruh) 
-	
+addtoggle({parent=CharacterRage,title='Auto Hop',valuename='autohop'}, function(bruh)
+
 end)
 
 --[[ OP P100000000000 ANTI AIM
-	while wait() do 
+	while wait() do
 	game.Players.LocalPlayer.Character.HumanoidRootPart.Position = game.Players.LocalPlayer.Character.HumanoidRootPart.Position + Vector3.new(0,1000,0)
 	game.Players.LocalPlayer.Character.Humanoid.CameraOffset = Vector3.new(0,-1000,0)
-	wait() 
+	wait()
 	game.Players.LocalPlayer.Character.HumanoidRootPart.Position = game.Players.LocalPlayer.Character.Head.Position + Vector3.new(0,-1.5,0)
 	game.Players.LocalPlayer.Character.Humanoid.CameraOffset = Vector3.new(0,0,0)
 end
@@ -1898,7 +1898,7 @@ local TrollRage = addcategory({parent=FIRST_rage,title='Troll',lenght=100})
 
 
 adddropdown({parent=TrollRage,valuename='chattype',list={'Select Chat Type','Alive','Dead'}},function(y)
-	
+
 end)
 
 
@@ -1906,10 +1906,10 @@ end)
 addtoggle({parent=TrollRage,title='Grenade Walk',valuename='grenadewalk'}, function(bruh) end)
 
 adddropdown({parent=TrollRage,valuename='grenadewalktype',list={'Molotov','HE Grenade','Smoke Grenade','Decoy Grenade','Flashbang'}},function(y)
-	
+
 end)
-addtoggle({parent=EnvironmentRage,title='Auto Rejoin',valuename='autorejoin'}, function(bruh) 
-	
+addtoggle({parent=EnvironmentRage,title='Auto Rejoin',valuename='autorejoin'}, function(bruh)
+
 end)
 
 addbutton({parent=EnvironmentRage,text='Plant C4'},function()
@@ -1949,7 +1949,7 @@ addbutton({parent=EnvironmentRage,text='Crash Server'},function()
 	end
 end)
 addbutton({parent=TrollRage,text='Kill All'},function()
-	for i,v in pairs(game.Players:GetPlayers()) do 
+	for i,v in pairs(game.Players:GetPlayers()) do
 		if v.Character and v ~= game.Players.LocalPlayer and v.TeamColor ~= game.Players.LocalPlayer.TeamColor then
 			local oh1 = v.Character.Head
 			local oh2 = v.Character.Head.CFrame.p
@@ -2024,7 +2024,7 @@ end)
 	if lplr.Character and not lplr:FindFirstChild('XDDLA') then
 		Instance.new('Sky',lplr.Character).Name = 'XDDLA'
 		local baby = lplr.Character
-		while baby.Parent == workspace do 
+		while baby.Parent == workspace do
 			delay(0,function()
 				game.Players.LocalPlayer.Character.HumanoidRootPart.Position = game.Players.LocalPlayer.Character.HumanoidRootPart.Position + Vector3.new(0,1000,0)
 				cameraoffset = true
@@ -2044,7 +2044,7 @@ addtoggle({parent=CharacterAntiAim,title='Down',valuename='down'}, function(bruh
 addtoggle({parent=CharacterAntiAim,title='Yaw',valuename='yaw'}, function(bruh) end)
 
 adddropdown({parent=CharacterAntiAim,valuename='yawtype',list={'Keybind','Jitter','Reversed','Manual','Spin'}},function(y)
-	
+
 end)
 
 addscroll({parent=CharacterAntiAim,valuename='yawmanual',title='Yaw',maxed=300,value=0},function(y)
@@ -2052,7 +2052,7 @@ end)
 
 local WorldVisuals = addcategory({parent=visual_4,title='Environment',lenght=100})
 
-addtoggle({parent=CharacterAntiAim,title='Global Shadows',valuename='globalshadows'}, function(bruh) 
+addtoggle({parent=CharacterAntiAim,title='Global Shadows',valuename='globalshadows'}, function(bruh)
 	game.Lighting.GlobalShadows = bruh
 end)
 
@@ -2167,27 +2167,27 @@ end)
 local ESPVisuals_Friendlies = addcategory({parent=visual_3,title='ESP',lenght=100})
 
 addtoggle({parent=ESPVisuals_Friendlies,title='Box',valuename='boxespteam'},function(callback)
-	
+
 end)
 addtoggle({parent=ESPVisuals_Friendlies,title='Chams',valuename='teamchams'},function(callback)
-	
+
 end)
 
 local ESPVisuals_Enemies = addcategory({parent=visual_2,title='ESP',lenght=100})
 
 addtoggle({parent=ESPVisuals_Enemies,title='Box',valuename='boxesp'},function(callback)
-	
+
 end)
 addtoggle({parent=ESPVisuals_Enemies,title='Name',valuename='nameesp'},function(callback)
-	
+
 end)
 
 addtoggle({parent=ESPVisuals_Enemies,title='Chams',valuename='enemychams'},function(callback)
-	
+
 end)
 
 addtoggle({parent=ESPVisuals_Enemies,title='Footstep',valuename='footstepesp'},function(callback)
-	
+
 end)
 
 addscroll({parent=ESPVisuals_Enemies,valuename='chamtransparency',title='Chams Transparency',maxed=100,value=0},function(y)	end)
@@ -2420,7 +2420,7 @@ addscroll({parent=ViewmodelVisuals,valuename='armtransparency',title='Arms Trans
 
 local ESPVisuals_Self = addcategory({parent=visual_1,title='Effects',lenght=100})
 addtoggle({parent=ESPVisuals_Self,title='Knife range',valuename='kniferange'},function(callback)
-	
+
 end)
 addtoggle({parent=ESPVisuals_Self,title='No scope',valuename='scopeviewenchancer'},function(callback)
 	if callback == true then
@@ -2659,7 +2659,7 @@ game:GetService("RunService").RenderStepped:connect(function()
 		workspace.CurrentCamera.FieldOfView = _G['property_fieldofview'] + 75
 	end
 	local xd = math.random(0,100);
-	if (_G['property_headshothitchance'] or 0) <= xd then 
+	if (_G['property_headshothitchance'] or 0) <= xd then
 		bodyname = 'UpperTorso'
 	elseif (_G['property_bodyhitchance'] or 0) >= xd then
 		bodyname = 'Head'
@@ -2731,20 +2731,20 @@ local draggable = function(gui)
 	local dragInput
 	local dragStart
 	local startPos
-	
+
 	local function update(input)
 		if not scrollon then
 			local delta = input.Position - dragStart
 			gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
 		end
 	end
-	
+
 	gui.InputBegan:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
 			dragging = true
 			dragStart = input.Position
 			startPos = gui.Position
-			
+
 			input.Changed:Connect(function()
 				if input.UserInputState == Enum.UserInputState.End then
 					dragging = false
@@ -2752,13 +2752,13 @@ local draggable = function(gui)
 			end)
 		end
 	end)
-	
+
 	gui.InputChanged:Connect(function(input)
 		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
 			dragInput = input
 		end
 	end)
-	
+
 	UserInputService.InputChanged:Connect(function(input)
 		if input == dragInput and dragging then
 			update(input)
@@ -2792,7 +2792,7 @@ function addnewconfig(name,code)
 	configbutton.TextSize = 11
 	configbutton.TextWrapped = true
 	configbutton.BackgroundColor3 = Color3.fromRGB(51, 53, 63)
-	
+
 	someline.Name = "someline"
 	someline.Parent = configbutton
 	someline.BackgroundColor3 = Color3.new(0.227451, 0.247059, 0.266667)
@@ -2850,7 +2850,7 @@ function checkfile()
 	local a,b = pcall(function()
 		readfile('config_bloxtap.txt')
 	end)
-	if string.find(b or "",'not exist') then 
+	if string.find(b or "",'not exist') then
 		writefile('config_bloxtap.txt','return {}')
 	end
 end
@@ -2887,7 +2887,7 @@ function loadsavedfileconfig()
 		configbutton.TextSize = 11
 		configbutton.TextWrapped = true
 		configbutton.BackgroundColor3 = Color3.fromRGB(51, 53, 63)
-		
+
 		someline.Name = "someline"
 		someline.Parent = configbutton
 		someline.BackgroundColor3 = Color3.new(0.227451, 0.247059, 0.266667)
@@ -2898,9 +2898,9 @@ function loadsavedfileconfig()
 		someline.ZIndex = 123131
 		local codeval = Instance.new("StringValue",configbutton)
 		codeval.Name = 'codeval'
-		
+
 		local realconfigs = DD[1]
-		
+
 		local r = "return {"
 		for i,v in pairs(realconfigs) do
 			if typeof(v['value']) == 'string' then
@@ -2972,7 +2972,7 @@ function nameesp(character)
 		name_ESP.ExtentsOffset = Vector3.new(0, 2, 0)
 		name_ESP.LightInfluence = 1
 		name_ESP.Size = UDim2.new(0, 200, 0, 50)
-		
+
 		NAME.Name = "NAME"
 		NAME.Parent = name_ESP
 		NAME.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -3010,9 +3010,9 @@ function footstepespcharacter(character)
 		0 -- DelayTime
 	)
 	local TweenService = game:GetService("TweenService")
-	
+
 	local tween = TweenService:Create(footstepesp, tweenInfo, {Size = Vector3.new(0, 16, 16)})
-	 
+
 	tween:Play()
 	game.Debris:AddItem(footstepesp,1)
 end
@@ -3023,7 +3023,7 @@ function boxespweapon(droppedgun)
 	local yes3 = Instance.new("Frame")
 	local yes4 = Instance.new("Frame")
 	local yes5 = Instance.new("Frame")
-	
+
 	box_ESP.Name = "box_ESP"
 	box_ESP.Parent = droppedgun
 	box_ESP.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
@@ -3032,32 +3032,32 @@ function boxespweapon(droppedgun)
 	box_ESP.LightInfluence = 1
 	box_ESP.MaxDistance = 150
 	box_ESP.Size = UDim2.new(2, 0, 2, 0)
-	
+
 	yes1.Name = "yes1"
 	yes1.Parent = box_ESP
 	yes1.BackgroundColor3 = Color3.new(1, 1, 1)
 	yes1.BackgroundTransparency = 1
 	yes1.Size = UDim2.new(1, 0, 1, 0)
-	
+
 	yes2.Name = "yes2"
 	yes2.Parent = yes1
 	yes2.BackgroundColor3 = Color3.new(1, 1, 1)
 	yes2.BorderSizePixel = 0
 	yes2.Size = UDim2.new(0, 1, 1, 0)
-	
+
 	yes3.Name = "yes3"
 	yes3.Parent = yes1
 	yes3.BackgroundColor3 = Color3.new(1, 1, 1)
 	yes3.BorderSizePixel = 0
 	yes3.Position = UDim2.new(1, -1, 0, 0)
 	yes3.Size = UDim2.new(0, 1, 1, 0)
-	
+
 	yes4.Name = "yes4"
 	yes4.Parent = yes1
 	yes4.BackgroundColor3 = Color3.new(1, 1, 1)
 	yes4.BorderSizePixel = 0
 	yes4.Size = UDim2.new(1, 0, 0, 1)
-	
+
 	yes5.Name = "yes5"
 	yes5.Parent = yes1
 	yes5.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -3073,7 +3073,7 @@ function boxesp(character)
 		local yes3 = Instance.new("Frame")
 		local yes4 = Instance.new("Frame")
 		local yes5 = Instance.new("Frame")
-		
+
 		box_ESP.Name = "box_ESP"
 		box_ESP.Parent = character
 		box_ESP.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
@@ -3082,32 +3082,32 @@ function boxesp(character)
 		box_ESP.LightInfluence = 1
 		box_ESP.MaxDistance = 150
 		box_ESP.Size = UDim2.new(4, 0, 5.19999981, 0)
-		
+
 		yes1.Name = "yes1"
 		yes1.Parent = box_ESP
 		yes1.BackgroundColor3 = Color3.new(1, 1, 1)
 		yes1.BackgroundTransparency = 1
 		yes1.Size = UDim2.new(1, 0, 1, 0)
-		
+
 		yes2.Name = "yes2"
 		yes2.Parent = yes1
 		yes2.BackgroundColor3 = Color3.new(1, 1, 1)
 		yes2.BorderSizePixel = 0
 		yes2.Size = UDim2.new(0, 1, 1, 0)
-		
+
 		yes3.Name = "yes3"
 		yes3.Parent = yes1
 		yes3.BackgroundColor3 = Color3.new(1, 1, 1)
 		yes3.BorderSizePixel = 0
 		yes3.Position = UDim2.new(1, -1, 0, 0)
 		yes3.Size = UDim2.new(0, 1, 1, 0)
-		
+
 		yes4.Name = "yes4"
 		yes4.Parent = yes1
 		yes4.BackgroundColor3 = Color3.new(1, 1, 1)
 		yes4.BorderSizePixel = 0
 		yes4.Size = UDim2.new(1, 0, 0, 1)
-		
+
 		yes5.Name = "yes5"
 		yes5.Parent = yes1
 		yes5.BackgroundColor3 = Color3.new(1, 1, 1)
@@ -3150,7 +3150,7 @@ function backtrack(character)
 								end
 								backtrackPART:Destroy()
 							end)
-						end	
+						end
 					end)
 				end
 			end
@@ -3187,12 +3187,12 @@ game.Players.LocalPlayer.CharacterAdded:connect(function(c)
 					v:Destroy()
 				end
 			end
-		end 
+		end
 		if _G['property_nocloth'] == true then
 			wait(1)
 			c:FindFirstChildOfClass('Shirt'):Destroy()
 			c:FindFirstChildOfClass('Pants'):Destroy()
-		end 
+		end
 	end)
 end)
 spawn(function()
@@ -3273,7 +3273,7 @@ spawn(function()
 									v:Destroy()
 								end
 							end
-						end	
+						end
 					end
 				else
 					if _G['property_antiheadshot'] == true then
@@ -3379,7 +3379,7 @@ function beam(part,pos,yeeet)
 			beam.Anchored = true
 			beam.Locked = true
 			beam.CanCollide = false
-			
+
 			local distance = (player.Character.Head.CFrame.p - position).magnitude
 			beam.Size = Vector3.new(0.08, 0.05, distance)
 			beam.CFrame = CFrame.new(player.Character.Head.CFrame.p, position) * CFrame.new(0, 0, -distance / 2)
@@ -3400,7 +3400,7 @@ local function Input(input, gameProcessedEvent)
 		spaceheld = false
 	end
 end
- 
+
 UserInputService.InputBegan:Connect(Input)
 spawn(function()
 	while wait(0.3) do
@@ -3418,11 +3418,11 @@ spawn(function()
 end)
 function getspectators()
 	local plrsspectating = ""
-	for i,v in pairs(game.Players:GetPlayers()) do 
+	for i,v in pairs(game.Players:GetPlayers()) do
 		pcall(function()
 			if v ~= lplr then
-				if not v.Character then 
-					if (v.CameraCF.Value.p - workspace.CurrentCamera.CFrame.p).Magnitude < 20 then 
+				if not v.Character then
+					if (v.CameraCF.Value.p - workspace.CurrentCamera.CFrame.p).Magnitude < 20 then
 						if plrsspectating == "" then
 							plrsspectating = v.Name
 						else
@@ -3468,14 +3468,14 @@ workspace.CurrentCamera.ChildAdded:Connect(function(t)
 	spawn(function()
 		if t.Name == 'Arms' then
 			if _G['property_tps'] == true then
-				for i,v in pairs(t:GetDescendants()) do 
-					if v:IsA("BasePart") and v.Transparency ~= 1 then 
+				for i,v in pairs(t:GetDescendants()) do
+					if v:IsA("BasePart") and v.Transparency ~= 1 then
 						v.Transparency = 1
 					end
 				end
 			else
-				for i,v in pairs(t:GetDescendants()) do 
-					if v:IsA("BasePart") and v.Transparency ~= 1 then 
+				for i,v in pairs(t:GetDescendants()) do
+					if v:IsA("BasePart") and v.Transparency ~= 1 then
 						v.Transparency = _G['property_armtransparency']/100
 					end
 				end
@@ -3498,7 +3498,7 @@ game.Players.PlayerRemoving:Connect(function(p)
 		if _G['property_autorejoin'] == true then
 			local ts = game:GetService("TeleportService")
 			local p = game:GetService("Players").LocalPlayer
-			 
+
 			ts:Teleport(game.PlaceId, p)
 		end
 	end
@@ -3538,7 +3538,7 @@ game:GetService("Workspace").Debris.ChildAdded:connect(function(obj)
 	checkdebris(obj)
 end)
 game:GetService("Workspace")["Ray_Ignore"].Smokes.ChildAdded:connect(function(obj)
-	spawn(function() 
+	spawn(function()
 		if _G['property_grenadesesp'] == true then
 			boxespweapon(obj)
 		end
@@ -3558,7 +3558,7 @@ local function Input(input, gameProcessedEvent)
 			holdspace = false
 		end
 	end
-end 
+end
 UserInputService.InputBegan:Connect(Input)
 draggable(main)
 draggable(configmain)
@@ -3566,7 +3566,7 @@ draggable(spectatorlist)
 
 username.Text = _G['bloxtapusername']
 
-loadsavedfileconfig()	
+loadsavedfileconfig()
 end)
 
 PhantomForces.Name = "Phantom Forces"
@@ -3792,12 +3792,12 @@ Game3.TextColor3 = Color3.fromRGB(255, 85, 0)
 Game3.TextSize = 14.000
 Game3.MouseButton1Down:connect(function()
 --[[
-                ___.    .__                             .__   __   .__       __    .__                  
-_______   ____  \_ |__  |  |    ____  ___  ___ __  _  __|__|_/  |_ |  |__   |  | __|__|  ____     ____  
-\_  __ \ /  _ \  | __ \ |  |   /    \ \  \/  / \ \/ \/ /|  |\   __\|  |  \  |  |/ /|  | /    \   / ___\ 
+                ___.    .__                             .__   __   .__       __    .__
+_______   ____  \_ |__  |  |    ____  ___  ___ __  _  __|__|_/  |_ |  |__   |  | __|__|  ____     ____
+\_  __ \ /  _ \  | __ \ |  |   /    \ \  \/  / \ \/ \/ /|  |\   __\|  |  \  |  |/ /|  | /    \   / ___\
  |  | \/(  <_> ) | \_\ \|  |__(      ) >    <   \     / |  | |  |  |   Y  \ |    < |  ||   |  \ / /_/  >
- |__|    \____/  |___  /|____/ \____/ /__/\_ \   \/\_/  |__| |__|  |___|  / |__|_ \|__||___|  / \___  / 
-                     \/                     \/                          \/       \/         \/ /_____/ 
+ |__|    \____/  |___  /|____/ \____/ /__/\_ \   \/\_/  |__| |__|  |___|  / |__|_ \|__||___|  / \___  /
+                     \/                     \/                          \/       \/         \/ /_____/
                                        Made by Real King#4934
                                      https://discord.gg/2TJq7Yz
 ]]
@@ -3812,11 +3812,224 @@ Game4.BorderColor3 = Color3.fromRGB(255, 85, 0)
 Game4.BorderSizePixel = 2
 Game4.Position = UDim2.new(0.524497628, 0, 0.504752815, 0)
 Game4.Size = UDim2.new(0, 253, 0, 50)
-Game4.Visible = false
+Game4.Visible = true
 Game4.Font = Enum.Font.GothamBlack
-Game4.Text = "Script"
+Game4.Text = "WestBound (Press Insert)"
 Game4.TextColor3 = Color3.fromRGB(255, 85, 0)
 Game4.TextSize = 14.000
+Game4.MouseButton1Down:connect(function()
+---Gui By Peanut#6952---
+
+---Scripts From robloxscripts.com---
+
+
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local TopBar = Instance.new("Frame")
+local Credits = Instance.new("TextLabel")
+local WestboundGui = Instance.new("TextLabel")
+local RGBFrame1 = Instance.new("Frame")
+local FastRobButton = Instance.new("TextButton")
+local GunMods = Instance.new("TextButton")
+local GetAllHorses = Instance.new("TextButton")
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.525308669, 0, 0.266240805, 0)
+Main.Size = UDim2.new(0, 212, 0, 225)
+Main.Visible = false
+Main.Draggable = true
+
+
+TopBar.Name = "TopBar"
+TopBar.Parent = Main
+TopBar.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TopBar.BorderSizePixel = 0
+TopBar.Size = UDim2.new(0, 211, 0, 31)
+
+Credits.Name = "Credits"
+Credits.Parent = TopBar
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 1.000
+Credits.Position = UDim2.new(0.0283018872, 0, 0.578947365, 0)
+Credits.Size = UDim2.new(0, 200, 0, 10)
+Credits.Font = Enum.Font.Code
+Credits.Text = "Gui Made By Peanut#6952"
+Credits.TextColor3 = Color3.fromRGB(0, 255, 255)
+Credits.TextScaled = true
+Credits.TextSize = 14.000
+Credits.TextWrapped = true
+
+WestboundGui.Name = "Westbound Gui"
+WestboundGui.Parent = TopBar
+WestboundGui.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WestboundGui.BackgroundTransparency = 1.000
+WestboundGui.Size = UDim2.new(0, 212, 0, 22)
+WestboundGui.Font = Enum.Font.Code
+WestboundGui.Text = "WestBound Gui"
+WestboundGui.TextColor3 = Color3.fromRGB(85, 255, 255)
+WestboundGui.TextScaled = true
+WestboundGui.TextSize = 14.000
+WestboundGui.TextWrapped = true
+
+RGBFrame1.Name = "RGBFrame1"
+RGBFrame1.Parent = TopBar
+RGBFrame1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RGBFrame1.BorderSizePixel = 0
+RGBFrame1.Position = UDim2.new(0, 0, 1, 0)
+RGBFrame1.Size = UDim2.new(0, 211, 0, 1)
+
+FastRobButton.Name = "FastRobButton"
+FastRobButton.Parent = Main
+FastRobButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+FastRobButton.BorderSizePixel = 0
+FastRobButton.Position = UDim2.new(0.0566037372, 0, 0.169579759, 0)
+FastRobButton.Size = UDim2.new(0, 188, 0, 54)
+FastRobButton.Font = Enum.Font.Bodoni
+FastRobButton.Text = "Fast Rob"
+FastRobButton.TextColor3 = Color3.fromRGB(0, 255, 255)
+FastRobButton.TextSize = 28.000
+FastRobButton.TextWrapped = true
+FastRobButton.MouseButton1Down:connect(function()
+local v15 = require(game:GetService("Workspace")[game.Players.LocalPlayer.Name].ContextActions.ContextMain);
+v15:New({
+RobPlayerLength = 0.1,
+FixWallLength = 0.1,
+CrackSafeLength = 0.1,
+RobSafeLength = 0.1,
+RobRegisterLength = 0.1,
+PickCellLength = 0.1,
+SkinAnimalLength = 0.1
+}, 200, { "Get out of my shop! Outlaws are not welcome here!", "Hey, scoundrel! Get out before I call the sheriff!", "You're an outlaw! We don't serve your type here!" }, { "This here's a bandit camp! Get out!", "Get lost, cowboy!", "Are you an outlaw? Didn't think so! Scram!" });
+end)
+
+GunMods.Name = "GunMods"
+GunMods.Parent = Main
+GunMods.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+GunMods.BorderSizePixel = 0
+GunMods.Position = UDim2.new(0.0566037372, 0, 0.440690815, 0)
+GunMods.Size = UDim2.new(0, 188, 0, 54)
+GunMods.Font = Enum.Font.Bodoni
+GunMods.Text = "Gun Mods (Colt.45)"
+GunMods.TextColor3 = Color3.fromRGB(0, 255, 255)
+GunMods.TextSize = 28.000
+GunMods.TextWrapped = true
+GunMods.MouseButton1Down:connect(function()
+local stats = require(game:GetService("ReplicatedStorage").GunScripts.GunStats)
+local gunName = "Colt .45"  -- Change to fit your needs
+
+stats[gunName].GunType = "Pistol"
+stats[gunName].MaxShots = 100
+stats[gunName].ReloadSpeed = 0
+end)
+
+GetAllHorses.Name = "Get All Horses"
+GetAllHorses.Parent = Main
+GetAllHorses.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+GetAllHorses.BorderSizePixel = 0
+GetAllHorses.Position = UDim2.new(0.0566037372, 0, 0.720690846, 0)
+GetAllHorses.Size = UDim2.new(0, 188, 0, 54)
+GetAllHorses.Font = Enum.Font.Bodoni
+GetAllHorses.Text = "Get All Horses"
+GetAllHorses.TextColor3 = Color3.fromRGB(0, 255, 255)
+GetAllHorses.TextSize = 28.000
+GetAllHorses.TextWrapped = true
+GetAllHorses.MouseButton1Down:connect(function()
+local horses = game:GetService("ReplicatedStorage").Costs.Horses:GetChildren()
+for i, horse in ipairs(horses) do
+    local clone = horse:Clone()
+    clone.Parent = game.Players.LocalPlayer.HorseDeeds
+end
+end)
+
+
+local frame = Main
+local hotkey = Enum.KeyCode.Insert
+
+local UIS = game:GetService("UserInputService")
+local open = false
+
+UIS.InputBegan:connect(function(key, qp)
+    if key.KeyCode == hotkey then
+        if open == false then
+            open = true
+            frame.Visible = open
+         elseif open == true then
+            open = false
+            frame.Visible = open
+        end
+    end
+end)
+
+local function SDYRRZV_fake_script() -- Main.LocalScript
+	local script = Instance.new('LocalScript', Main)
+
+	local UserInputService = game:GetService("UserInputService")
+
+	local Main = script.Parent
+
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+
+	local function update(input)
+	    local delta = input.Position - dragStart
+	    Main.Position = Main:TweenPosition(UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y), 'Out', 'Linear', 0, true); -- drag speed
+	end
+
+	Main.InputBegan:Connect(function(input)
+	    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+	        dragging = true
+	        dragStart = input.Position
+	        startPos = Main.Position
+
+	        input.Changed:Connect(function()
+	            if input.UserInputState == Enum.UserInputState.End then
+	                dragging = false
+	            end
+	        end)
+	    end
+	end)
+
+	Main.InputChanged:Connect(function(input)
+	    if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	        dragInput = input
+	    end
+	end)
+
+	UserInputService.InputChanged:Connect(function(input)
+	    if input == dragInput and dragging then
+	        update(input)
+	    end
+	end)
+end
+coroutine.wrap(SDYRRZV_fake_script)()
+
+local function BWPF_fake_script() -- RGBFrame1.LocalScript
+	local script = Instance.new('LocalScript', RGBFrame1)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+
+	counter = 0
+
+	while wait()do
+	 script.Parent.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+
+	 counter = counter + 0.01
+	end
+
+end
+coroutine.wrap(BWPF_fake_script)()
+
+end)
+
+
 
 Game5.Name = "Game5"
 Game5.Parent = ScrollingFrameGames
@@ -4223,7 +4436,7 @@ RemoteSpy.TextColor3 = Color3.fromRGB(255, 85, 0)
 RemoteSpy.TextSize = 14.000
 RemoteSpy.MouseButton1Down:connect(function()
 --// source: https://raw.githubusercontent.com/exxtremestuffs/SimpleSpySource/
---// Credits: 
+--// Credits:
 --// exxtremestuffs - basically everything
 --// Frosty - GUI to Lua
 
@@ -4269,33 +4482,33 @@ say the naughty word you want to say in-chat and it will auto-convert it.
 i recommend you put this in your autoexec folder.
 ]]--
 loadstring(game:HttpGet("https://pastebin.com/raw/JFeVbTv6", true))()
---[[ 
-*List Of Words That Can Be Bypassed* as of 7/1/20. 25 Total. 
-nigger 
-faggot 
-thot 
-bitch 
-cunt 
+--[[
+*List Of Words That Can Be Bypassed* as of 7/1/20. 25 Total.
+nigger
+faggot
+thot
+bitch
+cunt
 fuck
 fucker
 whore
 dick
-penis 
-asshole 
-allahu 
-akbar 
-crap 
-shit 
-motherfucker 
+penis
+asshole
+allahu
+akbar
+crap
+shit
+motherfucker
 girlfriend
-boyfriend 
-slave 
-hoe 
-sex  
-cum 
-pussy 
-nigga 
-slut 
+boyfriend
+slave
+hoe
+sex
+cum
+pussy
+nigga
+slut
 rape
 ]]--
 end)
@@ -5463,29 +5676,29 @@ end)
 
 -- Scripts:
 
-local function SDYRRZV_fake_script() -- Main.LocalScript 
+local function SDYRRZV_fake_script() -- Main.LocalScript
 	local script = Instance.new('LocalScript', Main)
 
 	local UserInputService = game:GetService("UserInputService")
-	 
+
 	local Main = script.Parent
-	 
+
 	local dragging
 	local dragInput
 	local dragStart
 	local startPos
-	 
+
 	local function update(input)
 	    local delta = input.Position - dragStart
 	    Main.Position = Main:TweenPosition(UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y), 'Out', 'Linear', 0, true); -- drag speed
 	end
-	 
+
 	Main.InputBegan:Connect(function(input)
 	    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
 	        dragging = true
 	        dragStart = input.Position
 	        startPos = Main.Position
-	       
+
 	        input.Changed:Connect(function()
 	            if input.UserInputState == Enum.UserInputState.End then
 	                dragging = false
@@ -5493,13 +5706,13 @@ local function SDYRRZV_fake_script() -- Main.LocalScript
 	        end)
 	    end
 	end)
-	 
+
 	Main.InputChanged:Connect(function(input)
 	    if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
 	        dragInput = input
 	    end
 	end)
-	 
+
 	UserInputService.InputChanged:Connect(function(input)
 	    if input == dragInput and dragging then
 	        update(input)
@@ -5508,202 +5721,202 @@ local function SDYRRZV_fake_script() -- Main.LocalScript
 end
 coroutine.wrap(SDYRRZV_fake_script)()
 
-local function MYLWXFF_fake_script() -- WhiteRainbowModeButton.LocalScript 
+local function MYLWXFF_fake_script() -- WhiteRainbowModeButton.LocalScript
 	local script = Instance.new('LocalScript', WhiteRainbowModeButton)
 
-	while true do 
+	while true do
 	i = 0
-	for n=1,0,-0.05 do 
+	for n=1,0,-0.05 do
 	i = i + 0.05
 	script.Parent.TextColor3 = Color3.new(i, 0, n)
-	wait() 
+	wait()
 	end
 	i = 0
-	for n=1,0,-0.05 do 
+	for n=1,0,-0.05 do
 	i = i + 0.05
 	script.Parent.TextColor3= Color3.new(n, i, 0)
 	wait()
 	end
 	i = 0
-	for n=1,0,-0.05 do 
+	for n=1,0,-0.05 do
 	i = i + 0.05
 	script.Parent.TextColor3 = Color3.new(0, n, i)
-	wait() 
-	end 
+	wait()
+	end
 	end
 end
 coroutine.wrap(MYLWXFF_fake_script)()
-local function XVKATD_fake_script() -- Frame.LocalScript 
+local function XVKATD_fake_script() -- Frame.LocalScript
 	local script = Instance.new('LocalScript', Frame)
 
 	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
-	
+
 	counter = 0
-	
+
 	while wait(0)do
 	 script.Parent.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
-	 
+
 	 counter = counter + 0.01
 	end
-	
+
 end
 coroutine.wrap(XVKATD_fake_script)()
-local function ESMG_fake_script() -- Version.LocalScript 
+local function ESMG_fake_script() -- Version.LocalScript
 	local script = Instance.new('LocalScript', Version)
 
-	while true do 
+	while true do
 	i = 0
-	for n=1,0,-0.05 do 
+	for n=1,0,-0.05 do
 	i = i + 0.05
 	script.Parent.TextColor3 = Color3.new(i, 0, n)
-	wait(1) 
+	wait(1)
 	end
 	i = 0
-	for n=1,0,-0.05 do 
+	for n=1,0,-0.05 do
 	i = i + 0.05
 	script.Parent.TextColor3= Color3.new(n, i, 0)
 	wait(1)
 	end
 	i = 0
-	for n=1,0,-0.05 do 
+	for n=1,0,-0.05 do
 	i = i + 0.05
 	script.Parent.TextColor3 = Color3.new(0, n, i)
-	wait(1) 
-	end 
+	wait(1)
+	end
 	end
 end
 coroutine.wrap(ESMG_fake_script)()
-local function OKISYW_fake_script() -- UpadateText.LocalScript 
+local function OKISYW_fake_script() -- UpadateText.LocalScript
 	local script = Instance.new('LocalScript', UpadateText)
 
-	while true do 
+	while true do
 	i = 0
-	for n=1,0,-0.05 do 
+	for n=1,0,-0.05 do
 	i = i + 0.05
 	script.Parent.TextColor3 = Color3.new(i, 0, n)
-	wait(1) 
+	wait(1)
 	end
 	i = 0
-	for n=1,0,-0.05 do 
+	for n=1,0,-0.05 do
 	i = i + 0.05
 	script.Parent.TextColor3= Color3.new(n, i, 0)
 	wait(1)
 	end
 	i = 0
-	for n=1,0,-0.05 do 
+	for n=1,0,-0.05 do
 	i = i + 0.05
 	script.Parent.TextColor3 = Color3.new(0, n, i)
-	wait(1) 
-	end 
+	wait(1)
+	end
 	end
 end
 coroutine.wrap(OKISYW_fake_script)()
-local function QTIF_fake_script() -- Features.LocalScript 
+local function QTIF_fake_script() -- Features.LocalScript
 	local script = Instance.new('LocalScript', Features)
 
-	while true do 
+	while true do
 	i = 0
-	for n=1,0,-0.05 do 
+	for n=1,0,-0.05 do
 	i = i + 0.05
 	script.Parent.TextColor3 = Color3.new(i, 0, n)
-	wait(1) 
+	wait(1)
 	end
 	i = 0
-	for n=1,0,-0.05 do 
+	for n=1,0,-0.05 do
 	i = i + 0.05
 	script.Parent.TextColor3= Color3.new(n, i, 0)
 	wait(1)
 	end
 	i = 0
-	for n=1,0,-0.05 do 
+	for n=1,0,-0.05 do
 	i = i + 0.05
 	script.Parent.TextColor3 = Color3.new(0, n, i)
-	wait(1) 
-	end 
+	wait(1)
+	end
 	end
 end
 coroutine.wrap(QTIF_fake_script)()
-local function JPDQAIU_fake_script() -- UpdateFText.LocalScript 
+local function JPDQAIU_fake_script() -- UpdateFText.LocalScript
 	local script = Instance.new('LocalScript', UpdateFText)
 
-	while true do 
+	while true do
 	i = 0
-	for n=1,0,-0.05 do 
+	for n=1,0,-0.05 do
 	i = i + 0.05
 	script.Parent.TextColor3 = Color3.new(i, 0, n)
-	wait(1) 
+	wait(1)
 	end
 	i = 0
-	for n=1,0,-0.05 do 
+	for n=1,0,-0.05 do
 	i = i + 0.05
 	script.Parent.TextColor3= Color3.new(n, i, 0)
 	wait(1)
 	end
 	i = 0
-	for n=1,0,-0.05 do 
+	for n=1,0,-0.05 do
 	i = i + 0.05
 	script.Parent.TextColor3 = Color3.new(0, n, i)
-	wait(1) 
-	end 
+	wait(1)
+	end
 	end
 end
 coroutine.wrap(JPDQAIU_fake_script)()
-local function PSWV_fake_script() -- UpdateFText_2.LocalScript 
+local function PSWV_fake_script() -- UpdateFText_2.LocalScript
 	local script = Instance.new('LocalScript', UpdateFText_2)
 
-	while true do 
+	while true do
 	i = 0
-	for n=1,0,-0.05 do 
+	for n=1,0,-0.05 do
 	i = i + 0.05
 	script.Parent.TextColor3 = Color3.new(i, 0, n)
-	wait(1) 
+	wait(1)
 	end
 	i = 0
-	for n=1,0,-0.05 do 
+	for n=1,0,-0.05 do
 	i = i + 0.05
 	script.Parent.TextColor3= Color3.new(n, i, 0)
 	wait(1)
 	end
 	i = 0
-	for n=1,0,-0.05 do 
+	for n=1,0,-0.05 do
 	i = i + 0.05
 	script.Parent.TextColor3 = Color3.new(0, n, i)
-	wait(1) 
-	end 
+	wait(1)
+	end
 	end
 end
 coroutine.wrap(PSWV_fake_script)()
-local function ZQQXRPM_fake_script() -- UpdateFText_3.LocalScript 
+local function ZQQXRPM_fake_script() -- UpdateFText_3.LocalScript
 	local script = Instance.new('LocalScript', UpdateFText_3)
 
-	while true do 
+	while true do
 	i = 0
-	for n=1,0,-0.05 do 
+	for n=1,0,-0.05 do
 	i = i + 0.05
 	script.Parent.TextColor3 = Color3.new(i, 0, n)
-	wait(1) 
+	wait(1)
 	end
 	i = 0
-	for n=1,0,-0.05 do 
+	for n=1,0,-0.05 do
 	i = i + 0.05
 	script.Parent.TextColor3= Color3.new(n, i, 0)
 	wait(1)
 	end
 	i = 0
-	for n=1,0,-0.05 do 
+	for n=1,0,-0.05 do
 	i = i + 0.05
 	script.Parent.TextColor3 = Color3.new(0, n, i)
-	wait(1) 
-	end 
+	wait(1)
+	end
 	end
 end
 coroutine.wrap(ZQQXRPM_fake_script)()
-local function UGVEI_fake_script() -- OtherScriptsFrame.LocalScript 
+local function UGVEI_fake_script() -- OtherScriptsFrame.LocalScript
 	local script = Instance.new('LocalScript', OtherScriptsFrame)
 
 	local scroll = script.Parent.ScrollingFrameOther -- CHANGE THIS TO YOUR SCROLLING FRAME
 	local textBox = script.Parent.SearchBar -- CHANGE THIS TO YOUR TEXT BOX
-	 
+
 	textBox.Changed:Connect(function() -- when the text is changed
 	    local text = textBox.Text:lower() -- lowercase search bar text
 	    if text ~= "" then -- if it has text
@@ -5729,4 +5942,3 @@ local function UGVEI_fake_script() -- OtherScriptsFrame.LocalScript
 	end)
 end
 coroutine.wrap(UGVEI_fake_script)()
-
