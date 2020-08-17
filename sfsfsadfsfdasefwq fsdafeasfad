@@ -3611,7 +3611,7 @@ Arsenal.Text = "Arsenal"
 Arsenal.TextColor3 = Color3.fromRGB(255, 85, 0)
 Arsenal.TextSize = 14.000
 Arsenal.MouseButton1Down:connect(function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NougatBitz/ArsenalHaxx/master/Script"))();
+loadstring(game:HttpGet(("https://pastebin.com/raw/yCrBkPaY"), true))()
 end)
 
 TypicalColors2.Name = "Typical Colors 2"
