@@ -3581,7 +3581,7 @@ PhantomForces.Text = "PhantomForces"
 PhantomForces.TextColor3 = Color3.fromRGB(255, 85, 0)
 PhantomForces.TextSize = 14.000
 PhantomForces.MouseButton1Down:connect(function()
-loadstring(game:HttpGetAsync("https://pastebin.com/raw/Gt1YBwre"))()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/07BAq9qH"))()
 end)
 
 MyRestaurant.Name = "My Restaurant"
