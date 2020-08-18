@@ -3581,7 +3581,208 @@ PhantomForces.Text = "PhantomForces"
 PhantomForces.TextColor3 = Color3.fromRGB(255, 85, 0)
 PhantomForces.TextSize = 14.000
 PhantomForces.MouseButton1Down:connect(function()
+
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local TopBar = Instance.new("Frame")
+local PickText = Instance.new("TextLabel")
+local Rainbuwfrimomg = Instance.new("Frame")
+local CloseButton = Instance.new("TextButton")
+local PulseGui = Instance.new("TextButton")
+local PFhaxx = Instance.new("TextButton")
+local BottomBar = Instance.new("Frame")
+local Credits = Instance.new("TextLabel")
+local anotherrainbowthingy = Instance.new("Frame")
+
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.442592621, 0, 0.343980342, 0)
+Main.Size = UDim2.new(0, 185, 0, 108)
+Main.Draggable = true
+
+TopBar.Name = "TopBar"
+TopBar.Parent = Main
+TopBar.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TopBar.BorderSizePixel = 0
+TopBar.Size = UDim2.new(0, 185, 0, 35)
+
+PickText.Name = "PickText"
+PickText.Parent = TopBar
+PickText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PickText.BackgroundTransparency = 1.000
+PickText.Size = UDim2.new(0, 184, 0, 35)
+PickText.Font = Enum.Font.Arial
+PickText.Text = "FedoraS Picker"
+PickText.TextColor3 = Color3.fromRGB(0, 255, 255)
+PickText.TextSize = 18.000
+
+Rainbuwfrimomg.Name = "Rainbuwfrimomg"
+Rainbuwfrimomg.Parent = TopBar
+Rainbuwfrimomg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rainbuwfrimomg.BorderSizePixel = 0
+Rainbuwfrimomg.Position = UDim2.new(0, 0, 1, 0)
+Rainbuwfrimomg.Size = UDim2.new(0, 184, 0, 1)
+
+CloseButton.Name = "CloseButton"
+CloseButton.Parent = TopBar
+CloseButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseButton.BackgroundTransparency = 1.000
+CloseButton.BorderSizePixel = 0
+CloseButton.Position = UDim2.new(0.881081104, 0, 0.314285725, 0)
+CloseButton.Size = UDim2.new(0, 13, 0, 13)
+CloseButton.Font = Enum.Font.ArialBold
+CloseButton.Text = "X"
+CloseButton.TextColor3 = Color3.fromRGB(0, 255, 255)
+CloseButton.TextSize = 13.000
+CloseButton.MouseButton1Down:connect(function()
+Main.Visible = false
+end)
+
+PulseGui.Name = "PulseGui"
+PulseGui.Parent = Main
+PulseGui.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+PulseGui.BorderColor3 = Color3.fromRGB(0, 255, 255)
+PulseGui.Position = UDim2.new(0.048648648, 0, 0.393317401, 0)
+PulseGui.Size = UDim2.new(0, 167, 0, 22)
+PulseGui.Font = Enum.Font.Code
+PulseGui.Text = "PulseGui"
+PulseGui.TextColor3 = Color3.fromRGB(0, 255, 255)
+PulseGui.TextSize = 21.000
+PulseGui.TextWrapped = true
+PulseGui.MouseButton1Down:connect(function()
 loadstring(game:HttpGetAsync("https://pastebin.com/raw/07BAq9qH"))()
+end)
+
+PFhaxx.Name = "PFhaxx"
+PFhaxx.Parent = Main
+PFhaxx.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+PFhaxx.BorderColor3 = Color3.fromRGB(0, 255, 255)
+PFhaxx.Position = UDim2.new(0.048648648, 0, 0.656634629, 0)
+PFhaxx.Size = UDim2.new(0, 167, 0, 22)
+PFhaxx.Font = Enum.Font.Code
+PFhaxx.Text = "PFhaxx"
+PFhaxx.TextColor3 = Color3.fromRGB(0, 255, 255)
+PFhaxx.TextSize = 21.000
+PFhaxx.TextWrapped = true
+PFhaxx.MouseButton1Down:connect(function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/Gt1YBwre"))()
+end)
+
+BottomBar.Name = "BottomBar"
+BottomBar.Parent = Main
+BottomBar.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+BottomBar.BorderSizePixel = 0
+BottomBar.Position = UDim2.new(0, 0, 0.935185194, 0)
+BottomBar.Size = UDim2.new(0, 185, 0, 14)
+
+Credits.Name = "Credits"
+Credits.Parent = BottomBar
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 1.000
+Credits.Position = UDim2.new(-0.00312423706, 0, 0.117518961, 0)
+Credits.Size = UDim2.new(0, 185, 0, 10)
+Credits.Font = Enum.Font.Code
+Credits.Text = "Gui By Peanut#6952"
+Credits.TextColor3 = Color3.fromRGB(0, 255, 255)
+Credits.TextSize = 10.000
+Credits.TextWrapped = true
+
+anotherrainbowthingy.Name = "anotherrainbowthingy"
+anotherrainbowthingy.Parent = BottomBar
+anotherrainbowthingy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+anotherrainbowthingy.BorderSizePixel = 0
+anotherrainbowthingy.Position = UDim2.new(0.00540540554, 0, -0.0714285374, 0)
+anotherrainbowthingy.Size = UDim2.new(0, 184, 0, 1)
+
+
+
+
+
+
+
+
+local function SDYRRZV_fake_script() -- Main.LocalScript 
+	local script = Instance.new('LocalScript', Main)
+
+	local UserInputService = game:GetService("UserInputService")
+	 
+	local Main = script.Parent
+	 
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	 
+	local function update(input)
+	    local delta = input.Position - dragStart
+	    Main.Position = Main:TweenPosition(UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y), 'Out', 'Linear', 0, true); -- drag speed
+	end
+	 
+	Main.InputBegan:Connect(function(input)
+	    if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+	        dragging = true
+	        dragStart = input.Position
+	        startPos = Main.Position
+	       
+	        input.Changed:Connect(function()
+	            if input.UserInputState == Enum.UserInputState.End then
+	                dragging = false
+	            end
+	        end)
+	    end
+	end)
+	 
+	Main.InputChanged:Connect(function(input)
+	    if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	        dragInput = input
+	    end
+	end)
+	 
+	UserInputService.InputChanged:Connect(function(input)
+	    if input == dragInput and dragging then
+	        update(input)
+	    end
+	end)
+end
+coroutine.wrap(SDYRRZV_fake_script)()
+
+
+local function GHSCQV_fake_script() -- Rainbuwfrimomg.LocalScript 
+	local script = Instance.new('LocalScript', Rainbuwfrimomg)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait()do
+	 script.Parent.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	 
+	 counter = counter + 0.01
+	end
+	
+end
+coroutine.wrap(GHSCQV_fake_script)()
+local function SNEWXK_fake_script() -- anotherrainbowthingy.LocalScript 
+	local script = Instance.new('LocalScript', anotherrainbowthingy)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait()do
+	 script.Parent.BackgroundColor3 = Color3.fromHSV(zigzag(counter),1,1)
+	 
+	 counter = counter + 0.01
+	end
+	
+end
+coroutine.wrap(SNEWXK_fake_script)()
 end)
 
 MyRestaurant.Name = "My Restaurant"
