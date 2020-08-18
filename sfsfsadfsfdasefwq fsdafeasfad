@@ -3602,7 +3602,7 @@ Main.Name = "Main"
 Main.Parent = ScreenGui
 Main.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
 Main.BorderSizePixel = 0
-Main.Position = UDim2.new(0.442592621, 0, 0.343980342, 0)
+Main.Position = UDim2.new(0.775308669, 0, 0.0491400361, 0)
 Main.Size = UDim2.new(0, 185, 0, 108)
 Main.Draggable = true
 
